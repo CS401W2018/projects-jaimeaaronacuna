@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.answers {
+    color: rgb(139, 0, 81);
+}
+
+.questions {
+    color: rgb(16, 9, 114);
+}
+
+span {
+    font-weight: 1000;
+}
+
+div {
+    background-color: aquamarine;
+}
