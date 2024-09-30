@@ -1,0 +1,15 @@
+#pageTitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d52a0;
+    font-size: 600;
+    background-color: #ede8f8;
+}
+
+.secondary {
+    color: #7091e6;
+}
