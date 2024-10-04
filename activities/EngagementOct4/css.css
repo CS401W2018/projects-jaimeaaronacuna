@@ -1,0 +1,10 @@
+body{
+    background: url("images.jpg") no-repeat rgb(184, 85, 19);
+    background-size: cover;
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+.highlight{
+    background-color: blue;
+}
