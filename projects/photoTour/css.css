@@ -6,6 +6,30 @@ span{
     background-color: beige;
 }
 
-header{
+.icon{
+    list-style-image: url(file.png);
+}
+
+main{
+    color: beige;
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px 1px 0 black, 
+    1px -1px 0 black, 
+    -1px -1px 0 black;
+}
+
+footer{
     background-color: beige;
+}
+
+div{
+    background: url(seal.png) no-repeat top right;
+}
+
+#current{
+    color: brown;
+    background-color: aqua;
 }
