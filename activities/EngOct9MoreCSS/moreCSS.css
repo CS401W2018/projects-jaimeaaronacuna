@@ -1,0 +1,23 @@
+header{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgb(101, 180, 226);
+    border-radius: 10px;
+}
+
+div{
+    background-color: rgb(152, 182, 235); 
+    padding: 50px;
+    border-radius: 30px;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+figure{
+    background-color: rgb(152, 182, 235);
+    padding: 10px;
+    align-items: center;
+}
