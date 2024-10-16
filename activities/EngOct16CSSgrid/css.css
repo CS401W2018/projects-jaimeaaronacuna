@@ -1,0 +1,15 @@
+.container {
+    background-color: aquamarine;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+    background-color: bisque;
+    border: thin solid black;
+}
+
+.item1 {
+    grid-column-start: 1;
+}
