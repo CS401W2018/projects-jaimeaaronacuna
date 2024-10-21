@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+}
+
+.item{
+    width: 300px;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+.item img{
+    width: 300px;
+    margin: 0px;
+}
