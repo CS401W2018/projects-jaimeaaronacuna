@@ -1,0 +1,29 @@
+.mainrow {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 30%;
+}
+
+aside figure {
+    width: 100%;
+}
+
+aside img {
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+}
+
+article {
+    width: 20%;
+}
+
+article img {
+    width: 100%;
+}
