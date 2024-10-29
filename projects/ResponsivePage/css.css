@@ -1,3 +1,23 @@
+header {
+    text-align: center;
+    color: rgb(163, 4, 4);
+}
+
+header h1 {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(163, 4, 4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 .mainrow {
     display: flex;
     flex-direction: row;
@@ -5,14 +25,17 @@
 
 aside {
     width: 30%;
+    padding: 10px;
 }
 
 aside figure {
-    width: 100%;
+    width: 90%;
+    align-items: center;
+    margin: auto;
 }
 
 aside img {
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -21,9 +44,45 @@ aside img {
 }
 
 article {
-    width: 20%;
+    width: 30%;
+    margin: 10px;
+    border: thin solid black;
+    box-shadow: 5px 5px rgba(50,50,50,.3);
 }
 
 article img {
     width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .mainrow {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        order: -1;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+@media only print {
+    nav {
+        display: none;
+    }
 }
