@@ -1,0 +1,25 @@
+.schedule {
+    border: thin solid;
+    margin: auto;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.schedule td, .schedule th {
+    border: thin solid black;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: rgb(143, 194, 240);
+}
+
+.schedule thead th {
+    background-color: rgb(9, 34, 148);
+    color: white
+}
+
+.tdata:nth-child(even) {
+    background-color: #CCC;
+}
