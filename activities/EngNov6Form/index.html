@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+    <nav>
+
+    </nav>
+
+    <body>
+        <form action="procesessing.html" method="post">
+            First Name: <input type="text" name="first" value="First Name"><br>
+            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
+            Password: <input type="password" name="pass" required><br>
+            <input type="checkbox" checked>
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox"><br>
+            <input type="radio" name="asd">
+            <input type="radio" name="asd">
+            <input type="radio" name="asd" checked>
+            <input type="radio" name="asd"><br>
+            <input type="date"><br>
+            <input type="search"><br>
+            <input type="file">
+            Comments: <textarea name="comments"></textarea><br><br>
+            Course: <select name="course">
+                <option value="BLANK"></option>
+                <option value="CS">Computer Science</option>
+                <option value="MATH">Mathemathics</option>
+                <option value="IT">Information Technology</option>
+            </select>
+            <br><input type="submit">
+        </form>
+        <hr>
+        <h3>
+            The form tag has an "action" attribute. What does it do?
+        </h3>
+        <p>
+            It sends the data the user has input to procesessing.html
+        </p>
+
+        <h3>
+            The form tag has a "method" attribute. What does it do?
+        </h3>
+        <p>
+            It specifies what method is being used, either post or get.
+        </p>
+
+        <h3>
+            What is the difference between a "POST" and a "GET"?
+        </h3>
+        <p>
+            A get request is like download while post is like upload.
+        </p>
+    </body>
+
+    <footer>
+        <br>
+        &copy; Jaime AaronV. Acuña III, 2024.
+    </footer>
+</body>
+</html>
