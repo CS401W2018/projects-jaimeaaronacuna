@@ -8,11 +8,8 @@
 </head>
 <body>
     <header>
-
+        <h1>Sign Up</h1>
     </header>
-    <nav>
-
-    </nav>
 
     <main>
         <form action="html.processing" method="post">
@@ -42,29 +39,21 @@
                     <div class="radRow">
                         <div class="spacer"></div>
                         <Label>
-                            <input type="radio" name="standing" value="freshman" required>
-                            Freshman
+                            <input type="radio" name="standing" value="male" required>
+                            Male
                         </Label>
                         <Label>
-                            <input type="radio" name="standing" value="sophomore">
-                            Sophomore
-                        </Label>
-                        <Label>
-                            <input type="radio" name="standing" value="junior">
-                            Junior
-                        </Label>
-                        <Label>
-                            <input type="radio" name="standing" value="senior">
-                            Senior
+                            <input type="radio" name="standing" value="female">
+                            Female
                         </Label>
                     </div>
                     <div class="formRow">
-                        <label for="course">Course:</label>
-                        <select name="course" required>
+                        <label for="country">Home Country:</label>
+                        <select name="country" required>
                             <option value="blank"></option>
-                            <option value="cs">Computer Science</option>
-                            <option value="it">Information Technology</option>
-                            <option value="math">Mathemathics</option>
+                            <option value="ph">Philippines</option>
+                            <option value="us">U.S.A</option>
+                            <option value="tonga">Tonga</option>
                         </select>
                     </div>
                     <div class="formRow">
@@ -114,7 +103,9 @@
                     </label>
                 </div>
             </fieldset>
-            <input type="submit">
+            <div class="subRow">
+                <input type="submit" class="sub">
+            </div>
         </form>
     </main>
 
