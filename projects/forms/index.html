@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+
+    <main>
+        <form action="html.processing" method="post">
+            <div class="align">
+                <fieldset class="pi">
+                    <legend>Personal Information</legend>
+                    <div class="formRow">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="bday">Date of Birth:</label>
+                        <input type="date" name="bday" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone">
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="radRow">
+                        <div class="spacer"></div>
+                        <Label>
+                            <input type="radio" name="standing" value="freshman" required>
+                            Freshman
+                        </Label>
+                        <Label>
+                            <input type="radio" name="standing" value="sophomore">
+                            Sophomore
+                        </Label>
+                        <Label>
+                            <input type="radio" name="standing" value="junior">
+                            Junior
+                        </Label>
+                        <Label>
+                            <input type="radio" name="standing" value="senior">
+                            Senior
+                        </Label>
+                    </div>
+                    <div class="formRow">
+                        <label for="course">Course:</label>
+                        <select name="course" required>
+                            <option value="blank"></option>
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="math">Mathemathics</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label for="bio">Bio:</label>
+                        <textarea name="bio"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="acc">
+                    <legend>Account</legend>
+                    <div class="formRow">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="pass2"> Confirm Password:</label>
+                        <input type="password" name="pass2" required>
+                    </div>
+                </fieldset>
+            </div>
+
+            <fieldset class="terms">
+                <legend>Terms and Agreements</legend>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" required>
+                        I accept and agree with the <a href="#">Terms and Conditions.</a>
+                    </label>
+                </div>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="texts">
+                        I allow the use of my phone number to recieve text messages (optional)
+                    </label>
+                </div>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="emails">
+                        I allow the use of my email to receive emails (optional)
+                    </label>
+                </div>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+
+    <footer>
+        &copy; Jaime Aaron V. Acuña III, 2024.
+    </footer>
+</body>
+</html>

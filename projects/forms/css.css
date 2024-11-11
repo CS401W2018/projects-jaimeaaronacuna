@@ -1,0 +1,13 @@
+.formRow, .checkRow, .radRow {
+    display: flex;
+}
+
+.align label, .align .spacer{
+    width: 150px;
+    text-align: right;
+}
+
+.radRow label{
+    width: 120px;
+    text-align: left;
+}
