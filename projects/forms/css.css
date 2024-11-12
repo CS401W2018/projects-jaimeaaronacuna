@@ -57,7 +57,7 @@ footer {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
     .formRow, .checkRow, .radRow {
         flex-direction: column;
     }
@@ -67,8 +67,16 @@ footer {
     }
 
     .sub {
-        width: 50%;
-        padding: 10px;
+        width: 100%;
+        padding: 10px 0px;
         margin: auto;
+    }
+
+    fieldset, .subRow {
+        width: 90%;
+    }
+
+    .subRow {
+        align-items: center;
     }
 }
