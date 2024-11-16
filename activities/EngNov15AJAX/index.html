@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Form Styling</h1>
+    </header>
+    <nav>
+
+    </nav>
+
+    <main>
+        <div id="message"></div>
+        <form action="procesessing.html" method="post" id="form1">
+            <fieldset>
+                <legend>Sign up</legend>
+                <div class="formRow">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" value="First Name">
+                </div>
+                <div class="formRow">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>
+                <div class="formRow">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div class="checkRow">
+                    <div class="checks">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" checked name="check1">
+                            check-1
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" checked name="check2">
+                            check-2
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" checked name="check3">
+                            check-3
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="checkbox" checked name="check4">
+                            check-4
+                        </label>
+                    </div>
+                </div>
+                <div class="radioRow">
+                    <div class="radios">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="radio" name="year" value="freshman">
+                            Freshman
+                        </label>
+                    </div>
+                    <div class="radios">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="radio" name="year" value="sophomore">
+                            Sophomore
+                        </label>
+                    </div>
+                    <div class="radios">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="radio" name="year" value="junior">
+                            Junior
+                        </label>
+                    </div>
+                    <div class="radios">
+                        <div class="spacer"></div>
+                        <label>
+                            <input type="radio" name="year" value="senior">
+                            Senior
+                        </label>
+                    </div>
+                </div>
+                <div class="formRow">
+                    <label for="course">Course:</label>
+                    <select name="course">
+                        <option value="BLANK"></option>
+                        <option value="CS">Computer Science</option>
+                        <option value="MATH">Mathemathics</option>
+                        <option value="IT">Information Technology</option>
+                    </select>
+                </div>
+                <div class="formRow">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment"></textarea>
+                </div>
+                <div class="formRow">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+        </fieldset>
+        </form>
+        <hr>
+        <h3>
+            What is JavaScript? How did it get its name?
+        </h3>
+        <p>
+            JavaScript is a programming langauge designed to make websites interactive. It got its name as a marketing ploy to associate themselves with the popular langauge of Java.
+        </p>
+
+        <h3>
+            What is AJAX?
+        </h3>
+        <p>
+            it stands for Asynchronous JavaScript And XML. It is a widely used method of making interactive websites.
+        </p>
+        <h3>
+            Why do you put your JS Code in a separate file?
+        </h3>
+        <p>
+            To be more organized with your code making it more readable.
+        </p>
+    </main>
+
+    <footer>
+        <br>
+        &copy; Jaime Aaron V. Acuña III, 2024.
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

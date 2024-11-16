@@ -1,0 +1,30 @@
+fieldset {
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.5);
+}
+
+legend {
+    background-color: rgb(68, 0, 255);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.formRow , .checks, .radios{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.checks {
+    margin-top: 2px;
+}
+
+.formRow label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+}
