@@ -75,16 +75,14 @@ document.getElementById('form1').addEventListener("submit", function(event) {
         xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                // alert('Form submitted successfully.');
                 const response = JSON.parse(xhr.response);
                 document.getElementById('headmessage').innerHTML = response.message;
+                document.getElementById('form1').innerHTML = "";
             } else if (xhr.readyState === 4) {
                 alert('Error submitting form.');
             }
         };
         xhr.send(JSON.stringify(formData));
-
-        document.getElementById('form1').reset();
 
         console.log(formData);
     }
