@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1 id="headmessage">Sign Up</h1>
+    </header>
+
+    <main>
+        <form action="html.processing" method="post" id="form1">
+            <div class="align">
+                <fieldset class="pi">
+                    <legend>Personal Information</legend>
+                    <div class="formRow">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="formRow">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div class="formRow">
+                        <label for="bday">Date of Birth:</label>
+                        <input type="date" name="bday" id="bday" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="radRow">
+                        <div class="spacer"></div>
+                        <Label>
+                            <input type="radio" name="gender" value="male" required>
+                            Male
+                        </Label>
+                        <Label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </Label>
+                    </div>
+                    <div class="formRow">
+                        <label for="country">Home Country:</label>
+                        <select name="country" id="country">
+                            <option value="blank">...</option>
+                            <option value="ph">Philippines</option>
+                            <option value="us">U.S.A</option>
+                            <option value="tonga">Tonga</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label for="bio">Bio:</label>
+                        <textarea name="bio" id="bio"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="acc">
+                    <legend>Account</legend>
+                    <div class="formRow">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="formRow">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="password" id="pass" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="pass2"> Confirm Password:</label>
+                        <input type="password" name="pass2" id="pass2" required>
+                    </div>
+                </fieldset>
+            </div>
+
+            <fieldset class="terms">
+                <legend>Terms and Agreements</legend>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" id="tac" required>
+                        I accept and agree with the <a href="#">Terms and Conditions.</a>
+                    </label>
+                </div>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="texts" id="texts">
+                        I allow the use of my phone number to recieve text messages (optional)
+                    </label>
+                </div>
+                <div class="checkRow">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="emails" id="emails">
+                        I allow the use of my email to receive emails (optional)
+                    </label>
+                </div>
+            </fieldset>
+            <div class="subRow">
+                <input type="submit" class="sub">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        &copy; Jaime Aaron V. Acuña III, 2024.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
