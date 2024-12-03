@@ -26,7 +26,7 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:hover {
+nav a:hover, .current {
     background-color: rgb(58, 122, 58);
 }
 
@@ -37,6 +37,7 @@ nav a:hover {
 
 .about img {
     width: 100%;
+    max-width: 1000px;
 }
 
 table {
@@ -60,6 +61,63 @@ tbody tr:nth-child(even) {
     background-color: rgb(209, 212, 245);
 }
 
+fieldset legend {
+    background-color: rgb(48, 83, 173);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formitem {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.formitem label, .spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.formitem input {
+    width: 150px;
+}
+
+#form1 {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.check, .rad {
+    display: flex;
+    justify-content: center;
+}
+
+.check label, .rad label {
+    width: 250px;
+}
+
+#submit {
+    background-color: rgb(48, 83, 173);
+    color: white;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: rgb(58, 122, 58);
+}
+
 @media only screen and (max-width: 750px) {
     nav {
         flex-direction: column;
@@ -69,5 +127,30 @@ tbody tr:nth-child(even) {
 
     .about {
         flex-direction: column;
+    }
+
+    #form1 {
+        width: 100%;
+    }
+
+    fieldset {
+        width: 90%;
+        margin: auto;
+    }
+
+    .formitem, .check , .rad {
+        flex-direction: column;
+    }
+
+    .formitem label {
+        text-align: left;
+    }
+
+    .formitem input {
+        width: 100%;
+    }
+    
+    #submit {
+        width: 100%;
     }
 }

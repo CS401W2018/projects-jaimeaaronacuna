@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panglao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="headmessage">Sign Up</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="panglao.html">Panglao</a>
+        <a href="chocolate.html">Chocolate Hills</a>
+        <a href="tarsier.html">Tarsiers</a>
+        <a href="form.html" class="current">Sign up</a>
+    </nav>
+
+    <main>
+        <form action="post" id="form1">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="formitem">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname">
+                </div>
+                <div class="formitem">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="formitem">
+                    <label for="bday">Birthdate:</label>
+                    <input type="date" id="bday">
+                </div>
+                <div class="formitem">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Package</legend>
+                <div class="check">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" id="pang" value="panglai">
+                        Panglao
+                    </label>
+                </div>
+                <div class="check">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" id="choc" value="chocolate">
+                        Chocolate Hills
+                    </label>
+                </div>
+                <div class="check">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" id="tar" value="tarsier">
+                        Tarsiers
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Acommodation</legend>
+                <div class="rad">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="radio" name="hotel" value="belle">
+                        Belle View Hotel
+                    </label>
+                </div>
+                <div class="rad">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="radio" name="hotel" value="metro">
+                        Metro Centre Hotel
+                    </label>
+                </div>
+                <div class="rad">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="radio" name="hotel" value="oceanica">
+                        Oceanica Resort
+                    </label>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit">
+            </form>
+    </main>
+
+    <footer>
+        &copy; Jaime Aaron V. Acuña III, 2024.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
